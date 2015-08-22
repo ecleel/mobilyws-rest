@@ -1,0 +1,7 @@
+{
+  "name": "Mobily.ws SMS send message gateway",
+  "description": "Small send api make you able to send SMS messages with 0 code changes.",
+  "repository": "https://github.com/ecleel/mobilyws-rest",
+  "logo": "http://eidsms.mobily.ws/images/3_03.png",
+  "keywords": ["sms", "gateway", "send", "API", "Saudi Arabia"]
+}

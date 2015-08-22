@@ -1,2 +1,2 @@
 # mobilyws-rest
-Small API for sending sms messages using mobilyws SMS Gateway
+Small API heroku ready for sending sms messages using mobilyws SMS Gateway.
