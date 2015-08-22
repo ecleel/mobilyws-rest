@@ -17,7 +17,6 @@
     },
     "SENDER_NAME": {
       "description": "sender name for mobily.ws"
-    },
+    }
   }
-  
 }
