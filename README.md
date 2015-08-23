@@ -16,6 +16,7 @@ You can find the Authentication key by asking heroku command about the config
 
 **-d**
 
-API accept two parameter
+API accept two parameters:
+
 1. name (optional): Name of SMS receiver. (you can use it in message string by adding %s)
 2. mobile (required): Mobile number. 
