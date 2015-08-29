@@ -7,7 +7,10 @@ Small API heroku ready for sending sms messages using mobilyws SMS Gateway.
 
 After you deploy your instance in heroku or in your own server, you can call the API as follows:
 
-```curl -i -X POST -H "Authentication:__YOUR_LONG_AUTHENTICATION_KEY__" -d "name=sami&mobile=966555555555" https://[APP_NAME].herokuapp.com/send```
+```curl -i -X POST \
+        -H "Authentication:__YOUR_LONG_AUTHENTICATION_KEY__" \
+        -d "name=sami&mobile=966555555555" \
+        https://[APP_NAME].herokuapp.com/send```
 
 **-H**
 
