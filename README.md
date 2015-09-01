@@ -11,7 +11,7 @@ After you deploy your instance in heroku or in your own server, you can call the
 curl -X POST https://[APP_NAME].herokuapp.com/send \ 
         -H "Authentication:__YOUR_LONG_AUTHENTICATION_KEY__" \
         -d mobile=966555555555 \
-	-d name="sami"
+        -d name="sami"
         
 ```
 
