@@ -3,7 +3,6 @@ require "mobilyws"
 require "cuba"
 
 sms = Mobilyws::API.new ENV["USERNAME"], ENV["PASSWORD"], ENV["SENDER_NAME"]
-message = ENV["MESSAGE"]
 
 # TODO user can send new message.
 
@@ -22,7 +21,7 @@ Cuba.define do
         on root do
           on param("mobile") do |mobile|
             name = req.params.fetch('name', '')
-            message = message % [name]
+            message = ENV["MESSAGE"] % [name]
             response = sms.send(message: message, numbers: [mobile])
             response_message  = {status: :sent, message: response}.to_json
             res.write response_message
