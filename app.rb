@@ -2,10 +2,6 @@ require "json"
 require "mobilyws"
 require "cuba"
 
-sms = Mobilyws::API.new ENV["USERNAME"], ENV["PASSWORD"], ENV["SENDER_NAME"]
-
-# TODO user can send new message.
-
 auth_token = ENV["AUTH_TOKEN"]
 
 Cuba.define do
@@ -20,6 +16,7 @@ Cuba.define do
       on "send" do
         on root do
           on param("mobile") do |mobile|
+            sms = Mobilyws::API.new ENV["USERNAME"], ENV["PASSWORD"], ENV["SENDER_NAME"]
             name = req.params.fetch('name', '')
             message = ENV["MESSAGE"] % [name]
             response = sms.send(message: message, numbers: [mobile])
