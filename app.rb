@@ -9,7 +9,7 @@ Cuba.define do
   res.headers["Content-Type"] = "application/json; charset=utf-8"
 
   on post do
-    
+
     user_token = env["HTTP_AUTHENTICATION"]
     on auth_token.eql?(user_token) do
 
@@ -31,9 +31,9 @@ Cuba.define do
             res.write error_message
           end
         end
-        
+
       end
-      
+
     end
   end
 end

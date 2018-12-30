@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby "2.2.2"
+ruby "2.5.1"
 
 gem 'cuba'
 gem 'mobilyws'
